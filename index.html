@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecionando...</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      text-align: center;
+      flex-direction: column;
+    }
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin-top: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Pixel do Facebook -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src='https://connect.facebook.net/en_US/fbevents.js';
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script');
+
+    fbq('init', '1422912169136813');
+    fbq('track', 'Purchase', {value: 20.00, currency: 'BRL'});
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1422912169136813&ev=PageView&noscript=1"
+  /></noscript>
+</head>
+
+<body>
+  <h2>Liberando o seu acesso ao Papo Sedutor...</h2>
+  <div class="loader"></div>
+
+  <script>
+    setTimeout(function(){
+      window.location.href = "https://drive.google.com/file/d/1gVf2WdkmPmptJ3m_vB4sUqDhyqRgaUMO/view?usp=sharing"; // Substitua pela URL de destino
+    }, 3000); // 3 segundos
+  </script>
+</body>
+</html>
